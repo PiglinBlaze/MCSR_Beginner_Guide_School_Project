@@ -1,0 +1,116 @@
+@font-face {
+  font-family: "MCFont";
+  src: url(../Fonts/Minecraftia-Regular.ttf) format("truetype");
+}
+
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(0, 0, 0);
+}
+
+.top-nav {
+  display: flex;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  justify-content: center;
+  gap: 18px;
+  align-items: center;
+  width: 100%;
+  padding: 10px 20px;
+  background: linear-gradient(rgba(0, 0, 0, 0.8));
+  border-bottom: 2px solid rgba(255, 255, 255, 0.15);
+}
+
+.nav-button {
+  padding: 8px 16px;
+  border: 2px solid rgba(255, 255, 255);
+  border-radius: 999px;
+  background-color: rgba(0, 0, 255, 0.3);
+  color: rgba(255, 255, 255);
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.nav-icon {
+  display: block;
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.nav-button:hover,
+.nav-button:focus-visible {
+  background-color: rgba(130, 220, 90, 0.4);
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  min-height: calc(100vh - 68px);
+  padding: 0 20px 28px;
+  background-image: url("../Images/Homepage/The Nether.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.minecraft-logo {
+  width: min(640px, 92vw);
+  margin-top: 46px;
+}
+
+.intro-card {
+  margin-top: 10px;
+  max-width: 708px;
+  padding: 14px 24px;
+  border-radius: 18px;
+}
+
+.intro-card h1 {
+  margin: 0 0 8px;
+  font-family: "MCFont";
+  font-size: 30px;
+}
+
+.intro-card p {
+  margin: 0px;
+  font-family: "MCFont";
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.explore-button {
+  margin-bottom: 18px;
+  padding: 12px 28px;
+  border: 2px solid rgba(0, 0, 0);
+  border-radius: 999px;
+  background-color: rgba(0, 0, 255, 0.3);
+  color: rgba(255, 255, 255);
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.explore-button:hover,
+.explore-button:focus-visible {
+  background-color: rgba(130, 220, 90, 0.4);
+}

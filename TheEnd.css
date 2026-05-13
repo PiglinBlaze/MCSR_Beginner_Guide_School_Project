@@ -1,0 +1,178 @@
+@font-face {
+  font-family: "MCFont";
+  src: url(../Fonts/Minecraftia-Regular.ttf) format("truetype");
+}
+
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  color: rgba(255, 255, 255, 1);
+  background: linear-gradient(rgba(0, 0, 0, 0.5)), url("../Images/The End/End.png") center / cover fixed;
+}
+
+.top-nav {
+  display: flex;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  justify-content: center;
+  gap: 18px;
+  align-items: center;
+  width: 100%;
+  padding: 10px 20px;
+  background: linear-gradient(rgba(0, 0, 0, 0.8));
+  border-bottom: 2px solid rgba(255, 255, 255, 0.15);
+}
+
+.nav-button {
+  padding: 8px 16px;
+  border: 2px solid rgba(255, 255, 255);
+  border-radius: 999px;
+  background-color: rgba(0, 0, 255, 0.3);
+  color: rgba(255, 255, 255);
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.nav-icon {
+  display: block;
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.nav-button:hover,
+.nav-button:focus-visible {
+  background-color: rgba(130, 220, 90, 0.4);
+}
+
+img,
+iframe {
+  max-width: 100%;
+}
+
+.end-page {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+  padding: 40px 0 56px;
+}
+
+.page-intro {
+  padding: 40px 24px;
+}
+
+.page-intro h1 {
+  margin: 0;
+  color: rgb(130, 220, 90);
+  font-family: "MCFont";
+  font-size: 42px;
+  line-height: 1;
+}
+
+.guide-section {
+  margin-top: 34px;
+  padding: 24px;
+  border: 1px solid rgba(210, 175, 255, 0.28);
+  border-radius: 8px;
+  background-color: transparent;
+}
+
+.guide-section h2 {
+  margin: 0 0 12px;
+  color: rgba(130, 220, 90);
+  font-size: 34px;
+}
+
+.guide-section p,
+.guide-section li {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.guide-section p {
+  margin-top: 0;
+}
+
+.guide-card {
+  margin: 18px 0 0;
+  padding: 20px;
+  background-color: transparent;
+}
+
+.guide-card figure {
+  margin: 16px 0 0;
+}
+
+.guide-image {
+  display: block;
+  width: 100%;
+  max-height: 500px;
+  object-fit: contain;
+  background-color: transparent;
+}
+
+figcaption {
+  margin-top: 10px;
+  color: rgba(225, 215, 240, 1);
+  font-size: 15px;
+  text-align: center;
+}
+
+.metafy-link {
+  color: rgba(130, 220, 90)
+}
+
+
+/* Embedded videos */
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin: 12px 0 20px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 8px;
+  background-color: transparent;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.credits-section {
+  margin-top: 34px;
+  padding: 24px;
+  border: 1px solid rgba(210, 175, 255, 0.28);
+  border-radius: 8px;
+  background-color: transparent;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.credits-section h4 {
+  margin: 0 0 12px;
+  color: rgba(255, 255, 255);
+  font-size: 20px;
+}
+
+.credits-section p {
+  margin: 0 0 12px;
+}
+
+.credits-section p:last-child {
+  margin-bottom: 0;
+}
+
+.credits-section a {
+  color: rgba(130, 220, 90);
+}
